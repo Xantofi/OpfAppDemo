@@ -1,0 +1,102 @@
+{
+  "type": "react",
+  "location": "/*/",
+  "id": "OpfAppDemo",
+  "domElementId": "root",
+  "mode": "demo",
+  "containerService": {},
+  "httpService": {
+    "app": {
+      "id": "OpfAppDemo",
+      "endpoint": "",
+      "port": 3000,
+      "headers": {}
+    },
+    "api": [{}]
+  },
+  "routerService": {
+    "entryPoints": [
+      {
+        "alias": ["OpfAppDemo"],
+        "url": "/OpfAppDemo"
+      }
+    ],
+    "paths": {
+      "internal": [
+        {
+          "path": "/",
+          "description": "Home"
+        },
+        {
+          "path": "/listado",
+          "description": "ClientListPage"
+        },
+        {
+          "path": "/formulario",
+          "description": "FormPage"
+        },
+        {
+          "path": "/formulario/*",
+          "description": "EditFormPage"
+        }
+      ],
+      "external": [
+        {
+          "alias": "GettingStarted",
+          "path": [
+            {
+              "type": "CO",
+              "parameters": {
+                "resolutorType": "DIRECT_LINK",
+                "resolutorPath": "https://confluence.cloud.lacaixa.es/confluence/display/serArqSpa/Getting+Started"
+              }
+            }
+          ]
+        },
+        {
+          "alias": "Marketplace",
+          "path": [
+            {
+              "type": "CO",
+              "parameters": {
+                "resolutorType": "DIRECT_LINK",
+                "resolutorPath": "https://portalabsis3.pro.ca.caixabank.com/marketplace/components/ui/"
+              }
+            }
+          ]
+        },
+        {
+          "alias": "React",
+          "path": [
+            {
+              "type": "CO",
+              "parameters": {
+                "resolutorType": "DIRECT_LINK",
+                "resolutorPath": "https://reactjs.org"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "contextService": {
+    "channelContext": {
+      "language": "ca_ES"
+    },
+    "userContext": {
+      "givenName": "VICTOR",
+      "familyName": "SAULER SAULER",
+      "gender": "V",
+      "birthdate": 19881126,
+      "phone": 340,
+      "email": "",
+      "address": {
+        "streetAddress": "ENTENÇA",
+        "region": "Barcelona",
+        "postalCode": 8029,
+        "country": "Espanya"
+      }
+    }
+  }
+}

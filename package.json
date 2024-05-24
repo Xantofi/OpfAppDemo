@@ -1,0 +1,77 @@
+{
+  "name": "@absis-app/OpfAppDemo",
+  "version": "0.1.0",
+  "description": "",
+  "author": "ABSIS3-NOW Team",
+  "license": "ISC",
+  "main": "src/index.js",
+  "files": [
+    "src/**/!(*.test.js)",
+    "dist"
+  ],
+  "absis": {
+    "alm": {
+      "artifactType": "APP",
+      "garComponentType": "CA.APP",
+      "distFolder": "dist",
+      "appName": "OpfAppDemo",
+      "channels": [
+        "CO",
+        "LO"
+      ]
+    },
+    "project": {
+      "type": "app",
+      "version": "0.3.48"
+    },
+    "loader": {
+      "app": "",
+      "config": ""
+    },
+    "i18n": {
+      "format": 2
+    },
+    "importFix": true
+  },
+  "dependencies": {
+    "@absis/absisDependency": "latest"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@absis/eslint-config-absis"
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "**/*.{js,css}": [
+      "absis-lint js --max-warnings 0",
+      "absis-lint scss --max-warnings 0",
+      "git add"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.1%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/react-router-dom": "^5.3.3"
+  }
+}

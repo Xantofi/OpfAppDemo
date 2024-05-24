@@ -1,0 +1,15 @@
+.logo-caixa {
+  margin-top: 5%;
+  margin-left: 25%;
+  padding: 50px;
+  min-width: 320px;
+  width: 50%;
+}
+
+.app {
+  text-align: center;
+}
+
+.ui-button {
+  display: block;
+}

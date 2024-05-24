@@ -1,0 +1,23 @@
+{
+  "es-ES": {
+    "HELLO_WORLD": "hola mundo",
+    "NAME": "Nombre",
+    "LASTNAME": "Apellido",
+    "RANDOM_TEXT": "Barcelona ha sido escenario de diversos acontecimientos internacionales que han contribuido a consolidarla, desarrollarla y darle proyección mundial. Los más relevantes han sido la Exposición Universal de 1888, la Exposición Internacional de 1929, los Juegos Olímpicos de 1992 y el Fórum Universal de las Culturas 2004. Es también sede del secretariado de la Unión para el Mediterráneo.",
+    "SEND_BTN": "Enviar"
+  },
+  "ca-ES": {
+    "HELLO_WORLD": "hola mon",
+    "NAME": "usuari",
+    "LASTNAME": "Cognom",
+    "RANDOM_TEXT": "Barcelona ha estat escenari de diversos esdeveniments internacionals que han contribuït a consolidar-la, desenvolupar-la i donar-li projecció mundial. Els més rellevants han estat l'Exposició Universal de 1888, l'Exposició Internacional de 1929, els Jocs Olímpics de 1992 i el Fòrum Universal de les Cultures 2004. És també seu del secretariat de la Unió per la Mediterrània.",
+    "SEND_BTN": "Envia"
+  },
+  "en-GB": {
+    "HELLO_WORLD": "hello world!",
+    "NAME": "Name",
+    "LASTNAME": "Username",
+    "RANDOM_TEXT": "Barcelona has been the scene of various international events that have helped to consolidate, develop and give global projection. The most relevant have been the Universal Exhibition of 1888, the International Exhibition of 1929, the 1992 Olympic Games and the Universal Forum of Cultures 2004. It is also the headquarters of the secretariat of the Union for the Mediterranean.",
+    "SEND_BTN": "Send"
+  }
+}
