@@ -41,7 +41,7 @@ const App = () => {
           );
         }}
       >
-        Go to Main Page
+        Go to Client List Page
       </UiButton>
 
       <p>
