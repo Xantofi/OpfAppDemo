@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { FormComponent } from '../../components';
 import { ClientsContext } from '../../common/context/ClientsContext';
+import { actions } from '../../assets/data/Actions';
 import { router } from '@absis/core';
 import { useParams } from 'react-router-dom';
 
@@ -50,10 +51,7 @@ const FormPage = () => {
       const newValues = {
         ...values,
         id: JSON.parse(id),
-        actions: [
-          { id: 'edit', name: 'Modificar' },
-          { id: 'delete', name: 'Eliminar' },
-        ],
+        actions: actions,
       };
       setClientList(
         clientList.map(cli => {
@@ -75,10 +73,7 @@ const FormPage = () => {
       const newValues = {
         ...values,
         id: maxId,
-        actions: [
-          { id: 'edit', name: 'Modificar' },
-          { id: 'delete', name: 'Eliminar' },
-        ],
+        actions: actions,
       };
       setClientList([...clientList, newValues]);
       onClear();

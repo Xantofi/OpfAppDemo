@@ -5,10 +5,6 @@ export const clients = [
     last_name: 'Soda',
     email: 'bsoda0@yelp.com',
     gender: 'Male',
-    actions: [
-      { id: 'edit', name: 'Modificar' },
-      { id: 'delete', name: 'Eliminar' },
-    ],
   },
   {
     id: 2,
@@ -16,10 +12,6 @@ export const clients = [
     last_name: 'Dolman',
     email: 'cdolman1@earthlink.net',
     gender: 'Non-binary',
-    actions: [
-      { id: 'edit', name: 'Modificar' },
-      { id: 'delete', name: 'Eliminar' },
-    ],
   },
   {
     id: 3,
@@ -27,10 +19,6 @@ export const clients = [
     last_name: 'Mawd',
     email: 'lmawd2@gov.uk',
     gender: 'Female',
-    actions: [
-      { id: 'edit', name: 'Modificar' },
-      { id: 'delete', name: 'Eliminar' },
-    ],
   },
   {
     id: 4,
@@ -38,10 +26,6 @@ export const clients = [
     last_name: 'Moodie',
     email: 'lmoodie3@ning.com',
     gender: 'Female',
-    actions: [
-      { id: 'edit', name: 'Modificar' },
-      { id: 'delete', name: 'Eliminar' },
-    ],
   },
   {
     id: 5,
@@ -49,10 +33,6 @@ export const clients = [
     last_name: 'Fend',
     email: 'gfend4@istockphoto.com',
     gender: 'Male',
-    actions: [
-      { id: 'edit', name: 'Modificar' },
-      { id: 'delete', name: 'Eliminar' },
-    ],
   },
   {
     id: 6,
@@ -60,10 +40,6 @@ export const clients = [
     last_name: 'Doles',
     email: 'vdoles5@alibaba.com',
     gender: 'genderfluid',
-    actions: [
-      { id: 'edit', name: 'Modificar' },
-      { id: 'delete', name: 'Eliminar' },
-    ],
   },
   {
     id: 7,
@@ -71,10 +47,6 @@ export const clients = [
     last_name: 'Lamping',
     email: 'slamping6@uiuc.edu',
     gender: 'Male',
-    actions: [
-      { id: 'edit', name: 'Modificar' },
-      { id: 'delete', name: 'Eliminar' },
-    ],
   },
   {
     id: 8,
@@ -82,10 +54,6 @@ export const clients = [
     last_name: 'Farady',
     email: 'mfarady7@ted.com',
     gender: 'Female',
-    actions: [
-      { id: 'edit', name: 'Modificar' },
-      { id: 'delete', name: 'Eliminar' },
-    ],
   },
   {
     id: 9,
@@ -93,10 +61,6 @@ export const clients = [
     last_name: 'Saull',
     email: 'csaull8@indiegogo.com',
     gender: 'Female',
-    actions: [
-      { id: 'edit', name: 'Modificar' },
-      { id: 'delete', name: 'Eliminar' },
-    ],
   },
   {
     id: 10,
@@ -104,10 +68,6 @@ export const clients = [
     last_name: 'Heggman',
     email: 'nheggman9@businessweek.com',
     gender: 'Female',
-    actions: [
-      { id: 'edit', name: 'Modificar' },
-      { id: 'delete', name: 'Eliminar' },
-    ],
   },
   {
     id: 11,
@@ -115,10 +75,6 @@ export const clients = [
     last_name: 'Butner',
     email: 'wbutnera@businessweek.com',
     gender: 'genderqueer',
-    actions: [
-      { id: 'edit', name: 'Modificar' },
-      { id: 'delete', name: 'Eliminar' },
-    ],
   },
   {
     id: 12,
@@ -126,10 +82,6 @@ export const clients = [
     last_name: 'Barrick',
     email: 'tbarrickb@slideshare.net',
     gender: 'Female',
-    actions: [
-      { id: 'edit', name: 'Modificar' },
-      { id: 'delete', name: 'Eliminar' },
-    ],
   },
   {
     id: 13,
@@ -137,10 +89,6 @@ export const clients = [
     last_name: 'Gouldbourn',
     email: 'lgouldbournc@ebay.com',
     gender: 'Male',
-    actions: [
-      { id: 'edit', name: 'Modificar' },
-      { id: 'delete', name: 'Eliminar' },
-    ],
   },
   {
     id: 14,
@@ -148,10 +96,6 @@ export const clients = [
     last_name: 'Ganiford',
     email: 'mganifordd@craigslist.org',
     gender: 'Female',
-    actions: [
-      { id: 'edit', name: 'Modificar' },
-      { id: 'delete', name: 'Eliminar' },
-    ],
   },
   {
     id: 15,
@@ -159,10 +103,6 @@ export const clients = [
     last_name: 'Pasque',
     email: 'epasquee@loc.gov',
     gender: 'Female',
-    actions: [
-      { id: 'edit', name: 'Modificar' },
-      { id: 'delete', name: 'Eliminar' },
-    ],
   },
   {
     id: 16,
@@ -170,10 +110,6 @@ export const clients = [
     last_name: 'McChruiter',
     email: 'vmcchruiterf@economist.com',
     gender: 'Male',
-    actions: [
-      { id: 'edit', name: 'Modificar' },
-      { id: 'delete', name: 'Eliminar' },
-    ],
   },
   {
     id: 17,
@@ -181,10 +117,6 @@ export const clients = [
     last_name: 'Alban',
     email: 'malbang@google.nl',
     gender: 'Female',
-    actions: [
-      { id: 'edit', name: 'Modificar' },
-      { id: 'delete', name: 'Eliminar' },
-    ],
   },
   {
     id: 18,
@@ -192,10 +124,6 @@ export const clients = [
     last_name: 'Drache',
     email: 'adracheh@zimbio.com',
     gender: 'Male',
-    actions: [
-      { id: 'edit', name: 'Modificar' },
-      { id: 'delete', name: 'Eliminar' },
-    ],
   },
   {
     id: 19,
@@ -203,10 +131,6 @@ export const clients = [
     last_name: 'Barajaz',
     email: 'lbarajazi@live.com',
     gender: 'Female',
-    actions: [
-      { id: 'edit', name: 'Modificar' },
-      { id: 'delete', name: 'Eliminar' },
-    ],
   },
   {
     id: 20,
@@ -214,10 +138,6 @@ export const clients = [
     last_name: "O'Hederscoll",
     email: 'kohederscollj@sakura.ne.jp',
     gender: 'Female',
-    actions: [
-      { id: 'edit', name: 'Modificar' },
-      { id: 'delete', name: 'Eliminar' },
-    ],
   },
   {
     id: 21,
@@ -225,10 +145,6 @@ export const clients = [
     last_name: 'Philips',
     email: 'kphilipsk@webeden.co.uk',
     gender: 'Female',
-    actions: [
-      { id: 'edit', name: 'Modificar' },
-      { id: 'delete', name: 'Eliminar' },
-    ],
   },
   {
     id: 22,
@@ -236,10 +152,6 @@ export const clients = [
     last_name: 'Janko',
     email: 'bjankol@oakley.com',
     gender: 'Female',
-    actions: [
-      { id: 'edit', name: 'Modificar' },
-      { id: 'delete', name: 'Eliminar' },
-    ],
   },
   {
     id: 23,
@@ -247,10 +159,6 @@ export const clients = [
     last_name: 'Brugsma',
     email: 'mbrugsmam@loc.gov',
     gender: 'Female',
-    actions: [
-      { id: 'edit', name: 'Modificar' },
-      { id: 'delete', name: 'Eliminar' },
-    ],
   },
   {
     id: 24,
@@ -258,10 +166,6 @@ export const clients = [
     last_name: 'Ornillos',
     email: 'jornillosn@arizona.edu',
     gender: 'Female',
-    actions: [
-      { id: 'edit', name: 'Modificar' },
-      { id: 'delete', name: 'Eliminar' },
-    ],
   },
   {
     id: 25,
@@ -269,10 +173,6 @@ export const clients = [
     last_name: 'Hadland',
     email: 'ghadlando@home.pl',
     gender: 'Female',
-    actions: [
-      { id: 'edit', name: 'Modificar' },
-      { id: 'delete', name: 'Eliminar' },
-    ],
   },
   {
     id: 26,
@@ -280,10 +180,6 @@ export const clients = [
     last_name: 'Dugall',
     email: 'tdugallp@zimbio.com',
     gender: 'Female',
-    actions: [
-      { id: 'edit', name: 'Modificar' },
-      { id: 'delete', name: 'Eliminar' },
-    ],
   },
   {
     id: 27,
@@ -291,10 +187,6 @@ export const clients = [
     last_name: 'Trusler',
     email: 'mtruslerq@columbia.edu',
     gender: 'Male',
-    actions: [
-      { id: 'edit', name: 'Modificar' },
-      { id: 'delete', name: 'Eliminar' },
-    ],
   },
   {
     id: 28,
@@ -302,10 +194,6 @@ export const clients = [
     last_name: 'Rogger',
     email: 'nroggerr@bravesites.com',
     gender: '',
-    actions: [
-      { id: 'edit', name: 'Modificar' },
-      { id: 'delete', name: 'Eliminar' },
-    ],
   },
   {
     id: 29,
@@ -313,10 +201,6 @@ export const clients = [
     last_name: 'Moody',
     email: 'mmoodys@google.cn',
     gender: 'Female',
-    actions: [
-      { id: 'edit', name: 'Modificar' },
-      { id: 'delete', name: 'Eliminar' },
-    ],
   },
   {
     id: 30,
@@ -324,10 +208,6 @@ export const clients = [
     last_name: 'Maund',
     email: 'jmaundt@networkadvertising.org',
     gender: 'Male',
-    actions: [
-      { id: 'edit', name: 'Modificar' },
-      { id: 'delete', name: 'Eliminar' },
-    ],
   },
   {
     id: 31,
@@ -335,10 +215,6 @@ export const clients = [
     last_name: 'Darwen',
     email: 'tdarwenu@soundcloud.com',
     gender: 'Female',
-    actions: [
-      { id: 'edit', name: 'Modificar' },
-      { id: 'delete', name: 'Eliminar' },
-    ],
   },
   {
     id: 32,
@@ -346,10 +222,6 @@ export const clients = [
     last_name: 'Raimbauld',
     email: 'craimbauldv@123-reg.co.uk',
     gender: 'Bigender',
-    actions: [
-      { id: 'edit', name: 'Modificar' },
-      { id: 'delete', name: 'Eliminar' },
-    ],
   },
   {
     id: 33,
@@ -357,10 +229,6 @@ export const clients = [
     last_name: 'Smallpiece',
     email: 'lsmallpiecew@admin.ch',
     gender: 'Female',
-    actions: [
-      { id: 'edit', name: 'Modificar' },
-      { id: 'delete', name: 'Eliminar' },
-    ],
   },
   {
     id: 34,
@@ -368,10 +236,6 @@ export const clients = [
     last_name: 'Rowling',
     email: 'hrowlingx@wikia.com',
     gender: 'Male',
-    actions: [
-      { id: 'edit', name: 'Modificar' },
-      { id: 'delete', name: 'Eliminar' },
-    ],
   },
   {
     id: 35,
@@ -379,10 +243,6 @@ export const clients = [
     last_name: 'Counter',
     email: 'mcountery@toplist.cz',
     gender: 'Female',
-    actions: [
-      { id: 'edit', name: 'Modificar' },
-      { id: 'delete', name: 'Eliminar' },
-    ],
   },
   {
     id: 36,
@@ -390,10 +250,6 @@ export const clients = [
     last_name: 'Milbourn',
     email: 'emilbournz@intel.com',
     gender: 'Male',
-    actions: [
-      { id: 'edit', name: 'Modificar' },
-      { id: 'delete', name: 'Eliminar' },
-    ],
   },
   {
     id: 37,
@@ -401,10 +257,6 @@ export const clients = [
     last_name: 'McCrudden',
     email: 'gmccrudden10@washington.edu',
     gender: 'Male',
-    actions: [
-      { id: 'edit', name: 'Modificar' },
-      { id: 'delete', name: 'Eliminar' },
-    ],
   },
   {
     id: 38,
@@ -412,10 +264,6 @@ export const clients = [
     last_name: 'Kalisch',
     email: 'ykalisch11@cafepress.com',
     gender: 'Agender',
-    actions: [
-      { id: 'edit', name: 'Modificar' },
-      { id: 'delete', name: 'Eliminar' },
-    ],
   },
   {
     id: 39,
@@ -423,10 +271,6 @@ export const clients = [
     last_name: 'Folkard',
     email: 'kfolkard12@canalblog.com',
     gender: 'Female',
-    actions: [
-      { id: 'edit', name: 'Modificar' },
-      { id: 'delete', name: 'Eliminar' },
-    ],
   },
   {
     id: 40,
@@ -434,10 +278,6 @@ export const clients = [
     last_name: 'Jagiela',
     email: 'cjagiela13@list-manage.com',
     gender: 'Male',
-    actions: [
-      { id: 'edit', name: 'Modificar' },
-      { id: 'delete', name: 'Eliminar' },
-    ],
   },
   {
     id: 41,
@@ -445,10 +285,6 @@ export const clients = [
     last_name: 'Lots',
     email: 'ulots14@com.com',
     gender: 'Male',
-    actions: [
-      { id: 'edit', name: 'Modificar' },
-      { id: 'delete', name: 'Eliminar' },
-    ],
   },
   {
     id: 42,
@@ -456,10 +292,6 @@ export const clients = [
     last_name: 'Mence',
     email: 'ymence15@vinaora.com',
     gender: 'Male',
-    actions: [
-      { id: 'edit', name: 'Modificar' },
-      { id: 'delete', name: 'Eliminar' },
-    ],
   },
   {
     id: 43,
@@ -467,10 +299,6 @@ export const clients = [
     last_name: 'Millership',
     email: 'pmillership16@house.gov',
     gender: 'Male',
-    actions: [
-      { id: 'edit', name: 'Modificar' },
-      { id: 'delete', name: 'Eliminar' },
-    ],
   },
   {
     id: 44,
@@ -478,10 +306,6 @@ export const clients = [
     last_name: 'Thomkins',
     email: 'mthomkins17@livejournal.com',
     gender: 'Female',
-    actions: [
-      { id: 'edit', name: 'Modificar' },
-      { id: 'delete', name: 'Eliminar' },
-    ],
   },
   {
     id: 45,
@@ -489,10 +313,6 @@ export const clients = [
     last_name: 'Marcos',
     email: 'lmarcos18@exblog.jp',
     gender: 'Male',
-    actions: [
-      { id: 'edit', name: 'Modificar' },
-      { id: 'delete', name: 'Eliminar' },
-    ],
   },
   {
     id: 46,
@@ -500,10 +320,6 @@ export const clients = [
     last_name: 'Dain',
     email: 'sdain19@hp.com',
     gender: 'Female',
-    actions: [
-      { id: 'edit', name: 'Modificar' },
-      { id: 'delete', name: 'Eliminar' },
-    ],
   },
   {
     id: 47,
@@ -511,10 +327,6 @@ export const clients = [
     last_name: 'Goldine',
     email: 'cgoldine1a@adobe.com',
     gender: 'Female',
-    actions: [
-      { id: 'edit', name: 'Modificar' },
-      { id: 'delete', name: 'Eliminar' },
-    ],
   },
   {
     id: 48,
@@ -522,10 +334,6 @@ export const clients = [
     last_name: 'Parncutt',
     email: 'dparncutt1b@goo.ne.jp',
     gender: 'Male',
-    actions: [
-      { id: 'edit', name: 'Modificar' },
-      { id: 'delete', name: 'Eliminar' },
-    ],
   },
   {
     id: 49,
@@ -533,10 +341,6 @@ export const clients = [
     last_name: 'Coneley',
     email: 'gconeley1c@networksolutions.com',
     gender: 'Male',
-    actions: [
-      { id: 'edit', name: 'Modificar' },
-      { id: 'delete', name: 'Eliminar' },
-    ],
   },
   {
     id: 50,
@@ -544,9 +348,5 @@ export const clients = [
     last_name: 'Gillyett',
     email: 'bgillyett1d@hc360.com',
     gender: 'Male',
-    actions: [
-      { id: 'edit', name: 'Modificar' },
-      { id: 'delete', name: 'Eliminar' },
-    ],
   },
 ];
