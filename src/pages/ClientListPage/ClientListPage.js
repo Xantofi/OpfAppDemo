@@ -5,6 +5,7 @@ import {
   OpfLightbox,
   OpfButton,
   OpfButtonGroup,
+  OpfSidePanel,
 } from '@absis-components/react';
 import { router } from '@absis/core';
 
@@ -12,6 +13,7 @@ const ClientListPage = () => {
   const maxShownEntries = 10;
   const navigationManager = router.navigationManager();
   const { clientList, setClientList } = useContext(ClientsContext);
+
   const [filteredClientList, setFilteredClientList] = useState(clientList);
   const [numPages, setNumPages] = useState(
     Math.trunc(clientList.length / maxShownEntries)
@@ -23,6 +25,8 @@ const ClientListPage = () => {
   );
   const [openDeleteModal, setOpenDeleteModal] = useState(false);
   const [selectedId, setSelectedId] = useState();
+  const [canCompare, setCanCompare] = useState(true);
+  const [openPanel, setOpenPanel] = useState(false);
 
   useEffect(() => {
     // Only execute when component is mount
@@ -98,10 +102,20 @@ const ClientListPage = () => {
     }
   };
 
+  const openComparator = () => {
+    console.log('I AM HERE');
+    setOpenPanel(true);
+  };
+
   return (
     <div className="container">
       <div className="row">
-        <TopBarComponent onInput={onInput} goToAdd={goToAddForm} />
+        <TopBarComponent
+          onInput={onInput}
+          goToAdd={goToAddForm}
+          openComparator={openComparator}
+          canCompare={canCompare}
+        />
       </div>
       <div className="row">
         <div className="col-12">
@@ -143,6 +157,14 @@ const ClientListPage = () => {
           )}
         </div>
       </div>
+      <OpfSidePanel
+        perform="overlay"
+        variant="sizeMedium"
+        open={openPanel}
+        onOpfHide={() => {
+          setOpenPanel(false);
+        }}
+      ></OpfSidePanel>
     </div>
   );
 };

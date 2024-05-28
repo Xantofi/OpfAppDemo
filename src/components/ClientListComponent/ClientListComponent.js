@@ -4,25 +4,32 @@ import ReactDOM from 'react-dom';
 import {
   OpfTable,
   OpfCell,
+  OpfControlCheckbox,
   OpfCellInfo,
   OpfMenuLauncher,
   OpfMenuContextual,
   OpfMenuItem,
   OpfPagination,
 } from '@absis-components/react';
+import { actions } from '../../assets/data/Actions';
 
-export const ClientListComponent = props => {
-  const {
-    clients,
-    numPages,
-    currentPage,
-    onPageChange,
-    removeClient,
-    goToEdit,
-  } = props;
   const columns = [
     {
       id: 1,
+    cell: (row, engine) => (
+      <OpfCell>
+        <OpfControlCheckbox
+          tabindex="0"
+          checked={!!engine.getState().checked}
+          onOpfChange={e => {
+            engine.setState({ checked: e.detail.value });
+          }}
+        />
+      </OpfCell>
+    ),
+  },
+  {
+    id: 2,
       header: {
         title1: 'Full name',
         fig1: 'ICO281',
@@ -30,7 +37,7 @@ export const ClientListComponent = props => {
       cell: row => <OpfCellInfo text={row.first_name + ' ' + row.last_name} />,
     },
     {
-      id: 2,
+    id: 3,
       header: {
         title1: 'Email',
         fig1: 'ICO384',
@@ -38,7 +45,7 @@ export const ClientListComponent = props => {
       cell: row => <OpfCellInfo text={row.email} />,
     },
     {
-      id: 3,
+    id: 4,
       header: {
         title1: 'Gender',
         fig1: 'ICO033',
@@ -46,7 +53,7 @@ export const ClientListComponent = props => {
       cell: row => <OpfCellInfo text={row.gender} />,
     },
     {
-      id: 4,
+    id: 5,
       cell: (row, engine) => (
         <OpfCell alignment="center">
           <OpfMenuLauncher
@@ -56,7 +63,7 @@ export const ClientListComponent = props => {
             }
           >
             <OpfMenuContextual>
-              {row.actions.map(it => (
+            {actions.map(it => (
                 <OpfMenuItem
                   key={it.id}
                   action={it.id}
@@ -77,6 +84,16 @@ export const ClientListComponent = props => {
       ),
     },
   ];
+
+export const ClientListComponent = props => {
+  const {
+    clients,
+    numPages,
+    currentPage,
+    onPageChange,
+    removeClient,
+    goToEdit,
+  } = props;
 
   return (
     <>
