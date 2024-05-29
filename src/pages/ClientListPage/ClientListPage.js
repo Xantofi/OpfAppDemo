@@ -1,6 +1,10 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { ClientsContext } from '../../common/context/ClientsContext';
-import { TopBarComponent, ClientListComponent } from '../../components/index';
+import {
+  TopBarComponent,
+  ClientListComponent,
+  ComparationComponent,
+} from '../../components/index';
 import {
   OpfLightbox,
   OpfButton,
@@ -25,8 +29,10 @@ const ClientListPage = () => {
   );
   const [openDeleteModal, setOpenDeleteModal] = useState(false);
   const [selectedId, setSelectedId] = useState();
-  const [canCompare, setCanCompare] = useState(true);
+  const [canCompare, setCanCompare] = useState(false);
   const [openPanel, setOpenPanel] = useState(false);
+  const [selectedClients, setSelectedClients] = useState([]);
+  const [maxSelected, setMaxSelected] = useState(false);
 
   useEffect(() => {
     // Only execute when component is mount
@@ -54,6 +60,21 @@ const ClientListPage = () => {
       clientList
     );
   }, [currentPage]);
+
+  useEffect(() => {
+    setShownClients(shownClients.map(cli => ({ ...cli })));
+    if (selectedClients.length >= 2) {
+      setCanCompare(true);
+    } else {
+      setCanCompare(false);
+    }
+
+    if (selectedClients.length < 4) {
+      setMaxSelected(false);
+    } else {
+      setMaxSelected(true);
+    }
+  }, [selectedClients]);
 
   const onInput = payload => {
     const searchExpresion = payload.detail.value;
@@ -103,8 +124,19 @@ const ClientListPage = () => {
   };
 
   const openComparator = () => {
-    console.log('I AM HERE');
     setOpenPanel(true);
+  };
+
+  const onSelectClient = (engine, event, row) => {
+    const isSelected = selectedClients.some(cli => cli.id == row.id);
+    let sclients = selectedClients;
+    if (isSelected) {
+      sclients = selectedClients.filter(cli => cli.id !== row.id);
+    } else {
+      sclients = [...selectedClients, row];
+    }
+    setSelectedClients(sclients);
+    engine.setState({ checked: event.detail.value });
   };
 
   return (
@@ -121,11 +153,14 @@ const ClientListPage = () => {
         <div className="col-12">
           <ClientListComponent
             clients={shownClients}
+            selectedClients={selectedClients}
             numPages={numPages}
             currentPage={currentPage}
+            maxSelected={maxSelected}
             onPageChange={onPageChange}
             removeClient={onRemoveClient}
             goToEdit={goToEditForm}
+            onSelectClient={onSelectClient}
           />
           {openDeleteModal && (
             <OpfLightbox
@@ -159,12 +194,14 @@ const ClientListPage = () => {
       </div>
       <OpfSidePanel
         perform="overlay"
-        variant="sizeMedium"
+        variant="sizeFull"
         open={openPanel}
         onOpfHide={() => {
           setOpenPanel(false);
         }}
-      ></OpfSidePanel>
+      >
+        <ComparationComponent selectedClients={selectedClients} />
+      </OpfSidePanel>
     </div>
   );
 };

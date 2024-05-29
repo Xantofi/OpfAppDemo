@@ -13,23 +13,38 @@ import {
 } from '@absis-components/react';
 import { actions } from '../../assets/data/Actions';
 
+export const ClientListComponent = props => {
+  const {
+    clients,
+    selectedClients,
+    numPages,
+    currentPage,
+    onPageChange,
+    maxSelected,
+    onSelectClient,
+    removeClient,
+    goToEdit,
+  } = props;
   const columns = [
     {
       id: 1,
-    cell: (row, engine) => (
-      <OpfCell>
-        <OpfControlCheckbox
-          tabindex="0"
-          checked={!!engine.getState().checked}
-          onOpfChange={e => {
-            engine.setState({ checked: e.detail.value });
-          }}
-        />
-      </OpfCell>
-    ),
-  },
-  {
-    id: 2,
+      cell: (row, engine) => (
+        <OpfCell>
+          <OpfControlCheckbox
+            tabindex="0"
+            checked={!!engine.getState().checked}
+            disabled={
+              maxSelected && !selectedClients.some(cli => cli.id == row.id)
+            }
+            onOpfChange={event => {
+              onSelectClient(engine, event, row);
+            }}
+          />
+        </OpfCell>
+      ),
+    },
+    {
+      id: 2,
       header: {
         title1: 'Full name',
         fig1: 'ICO281',
@@ -37,7 +52,7 @@ import { actions } from '../../assets/data/Actions';
       cell: row => <OpfCellInfo text={row.first_name + ' ' + row.last_name} />,
     },
     {
-    id: 3,
+      id: 3,
       header: {
         title1: 'Email',
         fig1: 'ICO384',
@@ -45,7 +60,7 @@ import { actions } from '../../assets/data/Actions';
       cell: row => <OpfCellInfo text={row.email} />,
     },
     {
-    id: 4,
+      id: 4,
       header: {
         title1: 'Gender',
         fig1: 'ICO033',
@@ -53,7 +68,7 @@ import { actions } from '../../assets/data/Actions';
       cell: row => <OpfCellInfo text={row.gender} />,
     },
     {
-    id: 5,
+      id: 5,
       cell: (row, engine) => (
         <OpfCell alignment="center">
           <OpfMenuLauncher
@@ -63,7 +78,7 @@ import { actions } from '../../assets/data/Actions';
             }
           >
             <OpfMenuContextual>
-            {actions.map(it => (
+              {actions.map(it => (
                 <OpfMenuItem
                   key={it.id}
                   action={it.id}
@@ -85,16 +100,6 @@ import { actions } from '../../assets/data/Actions';
     },
   ];
 
-export const ClientListComponent = props => {
-  const {
-    clients,
-    numPages,
-    currentPage,
-    onPageChange,
-    removeClient,
-    goToEdit,
-  } = props;
-
   return (
     <>
       <OpfTable
@@ -113,12 +118,14 @@ export const ClientListComponent = props => {
     </>
   );
 };
-
 ClientListComponent.propTypes = {
   clients: PropTypes.array,
+  selectedClients: PropTypes.array,
   numPages: PropTypes.number,
   currentPage: PropTypes.number,
+  maxSelected: PropTypes.bool,
   onPageChange: PropTypes.func,
+  onSelectClient: PropTypes.func,
   removeClient: PropTypes.func,
   goToEdit: PropTypes.func,
 };
